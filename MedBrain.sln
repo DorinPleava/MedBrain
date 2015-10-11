@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedBrain", "MedBrain\MedBrain.csproj", "{D7ABAF55-F01F-4B1C-8DFE-0AE9782250BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{CB87B4DA-39C3-43BD-A954-A172BDCEB294}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{DB39DC75-FE68-452C-834E-3F8B60F6C174}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\MedBrain-WAWS-dev.json = PublishScripts\Configurations\MedBrain-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7ABAF55-F01F-4B1C-8DFE-0AE9782250BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7ABAF55-F01F-4B1C-8DFE-0AE9782250BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7ABAF55-F01F-4B1C-8DFE-0AE9782250BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7ABAF55-F01F-4B1C-8DFE-0AE9782250BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB39DC75-FE68-452C-834E-3F8B60F6C174} = {CB87B4DA-39C3-43BD-A954-A172BDCEB294}
+	EndGlobalSection
+EndGlobal
