@@ -54,15 +54,18 @@ namespace MedBrain
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "917130118334160",
+               appSecret: "edf49244c560d4957ed0e7aba86c2a0b");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
             //    ClientId = "",
             //    ClientSecret = ""
             //});
-        }
+            app.UseGoogleAuthentication(
+                clientId: "128279961460-3vlrq95telsm693pftmsckbe52c82k3v.apps.googleusercontent.com",
+                   clientSecret: "xZvsnNW45I79x32oXT7QRKQG");
+             }
     }
 }
