@@ -29,5 +29,7 @@ namespace MedBrain.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MedBrain.Models.Contact> Contacts { get; set; }
     }
 }
