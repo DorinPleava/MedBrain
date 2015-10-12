@@ -30,6 +30,7 @@ namespace MedBrain.Controllers
 
         // GET: odata/ContactsAPI
         [EnableQuery]
+        //[Authorize(Roles = "canEdit")]
         public IQueryable<Contact> GetContactsAPI()
         {
             return db.Contacts;
