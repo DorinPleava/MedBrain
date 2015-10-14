@@ -20,9 +20,9 @@ namespace MedBrain.Migrations
             var rm = new RoleManager<IdentityRole>
                 (new RoleStore<IdentityRole>(context));
             ir = rm.Create(new IdentityRole("canEdit"));
-            var um = new UserManager<ApplicationUser>(
-                new UserStore<ApplicationUser>(context));
-            var user = new ApplicationUser()
+            var um = new UserManager<User>(
+                new UserStore<User>(context));
+            var user = new User()
             {
                 UserName = "user1@contoso.com",
             };
