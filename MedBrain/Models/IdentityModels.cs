@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Collections.Generic;
 
 namespace MedBrain.Models
 {
@@ -11,6 +12,7 @@ namespace MedBrain.Models
     {
         public string HomeTown { get; set; }
         public System.DateTime? BirthDate { get; set; }
+        public virtual ICollection<Question> Questions { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<User> manager)
         {

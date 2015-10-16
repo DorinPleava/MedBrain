@@ -221,11 +221,21 @@
     <Compile Include="Migrations\201510141002510_ChangedRoleTableName.Designer.cs">
       <DependentUpon>201510141002510_ChangedRoleTableName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510160812270_AddedQuestionsAndQuestionAnswers.cs" />
+    <Compile Include="Migrations\201510160812270_AddedQuestionsAndQuestionAnswers.Designer.cs">
+      <DependentUpon>201510160812270_AddedQuestionsAndQuestionAnswers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510160824498_AddedQuestionsAndQuestionAnswers2.cs" />
+    <Compile Include="Migrations\201510160824498_AddedQuestionsAndQuestionAnswers2.Designer.cs">
+      <DependentUpon>201510160824498_AddedQuestionsAndQuestionAnswers2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\QuestionAnswer.cs" />
+    <Compile Include="Models\Question.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -317,6 +327,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510141002510_ChangedRoleTableName.resx">
       <DependentUpon>201510141002510_ChangedRoleTableName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510160812270_AddedQuestionsAndQuestionAnswers.resx">
+      <DependentUpon>201510160812270_AddedQuestionsAndQuestionAnswers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510160824498_AddedQuestionsAndQuestionAnswers2.resx">
+      <DependentUpon>201510160824498_AddedQuestionsAndQuestionAnswers2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
