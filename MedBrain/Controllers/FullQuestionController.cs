@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace MedBrain.Controllers
 {
@@ -35,6 +36,8 @@ namespace MedBrain.Controllers
         {
             if (ModelState.IsValid)
             {
+                //Question.User will be completed when the user gets this question
+              //  fullQuestion.Question.Users.Add(Membership.GetUser());//(MedBrain.Models.User)Membership.GetUser().us;
                 db.Questions.Add(fullQuestion.Question);
                 db.QuestionAnswers.Add(fullQuestion.QuestionAnswer);
                 db.SaveChanges();
