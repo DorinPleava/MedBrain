@@ -45,5 +45,11 @@ namespace MedBrain.Models
         }
 
         public System.Data.Entity.DbSet<MedBrain.Models.Contact> Contacts { get; set; }
+
+        public System.Data.Entity.DbSet<MedBrain.Models.Question> Questions { get; set; }
+
+        public System.Data.Entity.DbSet<MedBrain.Models.QuestionAnswer> QuestionAnswers { get; set; }
+
+        public System.Data.Entity.DbSet<MedBrain.Models.FullQuestion> FullQuestions { get; set; }
     }
 }
