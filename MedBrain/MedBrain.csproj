@@ -236,6 +236,10 @@
     <Compile Include="Migrations\201510200530076_FullQ.Designer.cs">
       <DependentUpon>201510200530076_FullQ.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510220849421_MorePropsQandA.cs" />
+    <Compile Include="Migrations\201510220849421_MorePropsQandA.Designer.cs">
+      <DependentUpon>201510220849421_MorePropsQandA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Contact.cs" />
@@ -355,6 +359,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510200530076_FullQ.resx">
       <DependentUpon>201510200530076_FullQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510220849421_MorePropsQandA.resx">
+      <DependentUpon>201510220849421_MorePropsQandA.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
