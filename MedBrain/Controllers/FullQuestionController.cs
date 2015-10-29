@@ -38,6 +38,10 @@ namespace MedBrain.Controllers
             {
                 //Question.User will be completed when the user gets this question
               //  fullQuestion.Question.Users.Add(Membership.GetUser());//(MedBrain.Models.User)Membership.GetUser().us;
+
+                //set default values for DateTime objects
+
+
                 db.Questions.Add(fullQuestion.Question);
                 db.QuestionAnswers.Add(fullQuestion.QuestionAnswer);
                 db.SaveChanges();

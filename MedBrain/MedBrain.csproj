@@ -240,6 +240,14 @@
     <Compile Include="Migrations\201510220849421_MorePropsQandA.Designer.cs">
       <DependentUpon>201510220849421_MorePropsQandA.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510290808262_CorrectAnswerRequired.cs" />
+    <Compile Include="Migrations\201510290808262_CorrectAnswerRequired.Designer.cs">
+      <DependentUpon>201510290808262_CorrectAnswerRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510290912562_QuestVariantsInQuestModel.cs" />
+    <Compile Include="Migrations\201510290912562_QuestVariantsInQuestModel.Designer.cs">
+      <DependentUpon>201510290912562_QuestVariantsInQuestModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Contact.cs" />
@@ -362,6 +370,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510220849421_MorePropsQandA.resx">
       <DependentUpon>201510220849421_MorePropsQandA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510290808262_CorrectAnswerRequired.resx">
+      <DependentUpon>201510290808262_CorrectAnswerRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510290912562_QuestVariantsInQuestModel.resx">
+      <DependentUpon>201510290912562_QuestVariantsInQuestModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

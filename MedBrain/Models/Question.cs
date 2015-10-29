@@ -14,6 +14,12 @@ namespace MedBrain.Models
         public bool QuestionExpired { get; set; }
         public DateTime QuestionReceivedDate { get; set; }
         public DateTime QuestionAnsweredDate { get; set; }
+        public string QuestionOptionsVariant1 { get; set; }
+        public string QuestionOptionsVariant2 { get; set; }
+        public string QuestionOptionsVariant3 { get; set; }
+        public string QuestionOptionsVariant4 { get; set; }
+        public string QuestionOptionsVariant5 { get; set; }
+        public string QuestionOptionsVariant6 { get; set; }
         public virtual ICollection<User> Users { get; set; }
         public virtual QuestionAnswer QuestionAnswer { get; set; }
     }
