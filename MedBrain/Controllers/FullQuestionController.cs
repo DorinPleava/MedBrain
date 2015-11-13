@@ -37,10 +37,11 @@ namespace MedBrain.Controllers
             if (ModelState.IsValid)
             {
                 //Question.User will be completed when the user gets this question
-              //  fullQuestion.Question.Users.Add(Membership.GetUser());//(MedBrain.Models.User)Membership.GetUser().us;
+                //  fullQuestion.Question.Users.Add(Membership.GetUser());//(MedBrain.Models.User)Membership.GetUser().us;
 
                 //set default values for DateTime objects
-
+                fullQuestion.Question.QuestionAnsweredDate = DefaultDateTime();
+                fullQuestion.Question.QuestionReceivedDate = DefaultDateTime();
 
                 db.Questions.Add(fullQuestion.Question);
                 db.QuestionAnswers.Add(fullQuestion.QuestionAnswer);
@@ -51,6 +52,11 @@ namespace MedBrain.Controllers
             ViewBag.QuestionAnswerId = new SelectList(db.Questions, "QuestionId", "QuestionText", fullQuestion.QuestionAnswer.QuestionAnswerId);
             ViewBag.QuestionId = new SelectList(db.QuestionAnswers, "QuestionAnswerId", "QuestionAnswerId", fullQuestion.Question.QuestionId);
             return View(fullQuestion);
+        }
+
+        private DateTime DefaultDateTime()
+        {
+            throw new NotImplementedException();
         }
     }
 }
